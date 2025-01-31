@@ -7,7 +7,11 @@ const Child2Comp = React.memo((props) => {
     <div>
       <h1>This is Child2Comp</h1>
       <h1>Name: {name1}</h1>
-      <button type="button" onClick={() => eventData()}>
+      <button
+        type="button"
+        className="btn btn-primary"
+        onClick={() => eventData()}
+      >
         Update from Fucn child
       </button>
     </div>
