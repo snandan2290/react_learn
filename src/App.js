@@ -1,7 +1,8 @@
 // import logo from "./logo.svg";
 import "./App.css";
 // import ConditionalRenComp from "./componenets/ConditionalRenComp";
-import ParentComp from "./componenets/ParentComp";
+// import ParentComp from "./componenets/ParentComp";
+import RenderListComp from "./componenets/RenderListComp";
 // import ImageToggleComp from "./componenets/ImageToggleComp";
 // import CounterComp from "./componenets/CounterComp";
 // import InfoComp from "./componenets/InfoComp";
@@ -42,7 +43,8 @@ function App() {
       {/* <ImageToggleComp /> */}
       {/* <ConditionalRenComp />
        */}
-      <ParentComp />
+      {/* <ParentComp /> */}
+      <RenderListComp></RenderListComp>
     </div>
   );
 }
