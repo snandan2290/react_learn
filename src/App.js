@@ -1,8 +1,12 @@
 // import logo from "./logo.svg";
 import "./App.css";
+import { FormEvalComp } from "./componenets/FormEvalComp";
+// /import UseStateHookComp from "./componenets/UseStateHookComp";
+// import ClickCounterComp from "./componenets/ClickCounterComp";
+// import HoverCounterComp from "./componenets/HoverCounterComp";
 // import ConditionalRenComp from "./componenets/ConditionalRenComp";
 // import ParentComp from "./componenets/ParentComp";
-import RenderListComp from "./componenets/RenderListComp";
+// import RenderListComp from "./componenets/RenderListComp";
 // import ImageToggleComp from "./componenets/ImageToggleComp";
 // import CounterComp from "./componenets/CounterComp";
 // import InfoComp from "./componenets/InfoComp";
@@ -44,7 +48,11 @@ function App() {
       {/* <ConditionalRenComp />
        */}
       {/* <ParentComp /> */}
-      <RenderListComp></RenderListComp>
+      {/* <RenderListComp></RenderListComp> */}
+      {/* <ClickCounterComp /> */}
+      {/* <HoverCounterComp /> */}
+      {/* <UseStateHookComp /> */}
+      <FormEvalComp />
     </div>
   );
 }
