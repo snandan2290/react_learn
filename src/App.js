@@ -1,6 +1,9 @@
 // import logo from "./logo.svg";
 import "./App.css";
-import { FormEvalComp } from "./componenets/FormEvalComp";
+import ErrorBoundryComp from "./componenets/ErrorBoundryComp";
+// import LifeCyleComp from "./componenets/LifeCyleComp";
+import UserUnMountComp from "./componenets/UserUnMountComp";
+// import { FormEvalComp } from "./componenets/FormEvalComp";
 // /import UseStateHookComp from "./componenets/UseStateHookComp";
 // import ClickCounterComp from "./componenets/ClickCounterComp";
 // import HoverCounterComp from "./componenets/HoverCounterComp";
@@ -52,7 +55,17 @@ function App() {
       {/* <ClickCounterComp /> */}
       {/* <HoverCounterComp /> */}
       {/* <UseStateHookComp /> */}
-      <FormEvalComp />
+      {/* <FormEvalComp /> */}
+      {/* <LifeCyleComp color="green"></LifeCyleComp> */}
+      <ErrorBoundryComp>
+        <UserUnMountComp user="Nandan" />
+      </ErrorBoundryComp>
+      <ErrorBoundryComp>
+        <UserUnMountComp user="Krishna" />
+      </ErrorBoundryComp>
+      <ErrorBoundryComp>
+        <UserUnMountComp user="Divya" />
+      </ErrorBoundryComp>
     </div>
   );
 }
