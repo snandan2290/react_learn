@@ -1,6 +1,7 @@
-import React, { PureComponent } from "react";
+import { Component } from "react";
+import WithErroBoundryComp from "./WithErroBoundryComp";
 
-class UserUnMountComp extends PureComponent {
+class UserUnMountComp extends Component {
   render() {
     if (this.props.user === "Divya") {
       throw Error("No the user");
@@ -9,4 +10,4 @@ class UserUnMountComp extends PureComponent {
   }
 }
 
-export default UserUnMountComp;
+export default WithErroBoundryComp(UserUnMountComp);

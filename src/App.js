@@ -1,8 +1,9 @@
 // import logo from "./logo.svg";
 import "./App.css";
-import ErrorBoundryComp from "./componenets/ErrorBoundryComp";
+// import ErrorBoundryComp from "./componenets/ErrorBoundryComp";
 // import LifeCyleComp from "./componenets/LifeCyleComp";
 import UserUnMountComp from "./componenets/UserUnMountComp";
+// import WithErroBoundryComp from "./componenets/WithErroBoundryComp";
 // import { FormEvalComp } from "./componenets/FormEvalComp";
 // /import UseStateHookComp from "./componenets/UseStateHookComp";
 // import ClickCounterComp from "./componenets/ClickCounterComp";
@@ -57,7 +58,8 @@ function App() {
       {/* <UseStateHookComp /> */}
       {/* <FormEvalComp /> */}
       {/* <LifeCyleComp color="green"></LifeCyleComp> */}
-      <ErrorBoundryComp>
+      {/* Commenting after applying HOC for ErrorBoundary */}
+      {/* <ErrorBoundryComp>
         <UserUnMountComp user="Nandan" />
       </ErrorBoundryComp>
       <ErrorBoundryComp>
@@ -65,7 +67,11 @@ function App() {
       </ErrorBoundryComp>
       <ErrorBoundryComp>
         <UserUnMountComp user="Divya" />
-      </ErrorBoundryComp>
+      </ErrorBoundryComp> */}
+
+      <UserUnMountComp user="Nandan" />
+      <UserUnMountComp user="Divya" />
+      <UserUnMountComp user="Krishna" />
     </div>
   );
 }
