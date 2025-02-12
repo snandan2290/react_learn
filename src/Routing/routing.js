@@ -9,6 +9,7 @@ import { lazy, Suspense } from "react";
 import ReactHookComp from "../Hooks/ReactHookComp";
 import UseStateComp from "../Hooks/UseStateComp";
 import UseEffectComp from "../Hooks/UseEffectComp";
+import ProductDashComp from "../CRUD/ProductDashComp";
 
 // Lazy loading componenets
 // const LoginComp = lazy(() => import("../layout/LoginComp.js"));
@@ -76,6 +77,10 @@ const router = createBrowserRouter([
             element: <UseEffectComp></UseEffectComp>,
           },
         ],
+      },
+      {
+        path: "crud",
+        element: <ProductDashComp></ProductDashComp>,
       },
     ],
   },

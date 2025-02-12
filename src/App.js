@@ -1,8 +1,9 @@
 // import logo from "./logo.svg";
 import "./App.css";
+// import MovieComp from "./componenets/MovieComp";
 // import ErrorBoundryComp from "./componenets/ErrorBoundryComp";
 // import LifeCyleComp from "./componenets/LifeCyleComp";
-import UserUnMountComp from "./componenets/UserUnMountComp";
+// import UserUnMountComp from "./componenets/UserUnMountComp";
 // import WithErroBoundryComp from "./componenets/WithErroBoundryComp";
 // import { FormEvalComp } from "./componenets/FormEvalComp";
 // /import UseStateHookComp from "./componenets/UseStateHookComp";
@@ -69,9 +70,10 @@ function App() {
         <UserUnMountComp user="Divya" />
       </ErrorBoundryComp> */}
 
-      <UserUnMountComp user="Nandan" />
+      {/* <UserUnMountComp user="Nandan" />
       <UserUnMountComp user="Divya" />
-      <UserUnMountComp user="Krishna" />
+      <UserUnMountComp user="Krishna" /> */}
+      {/* <MovieComp></MovieComp> */}
     </div>
   );
 }

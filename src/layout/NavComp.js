@@ -6,16 +6,19 @@ const NavComp = () => {
     <div>
       <Link to="images" class="btn btn-primary">
         Images
-      </Link>
+      </Link>{" "}
       <Link to="parent" class="btn btn-primary">
         Parent
-      </Link>
+      </Link>{" "}
       <Link to="classcomp/:id" class="btn btn-primary">
         ClassComp
-      </Link>
+      </Link>{" "}
       <Link to="hook" class="btn btn-primary">
         Hook
-      </Link>
+      </Link>{" "}
+      <Link to="crud" class="btn btn-primary">
+        Crud
+      </Link>{" "}
     </div>
   );
 };

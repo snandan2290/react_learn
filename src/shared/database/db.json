@@ -1,6 +1,41 @@
 {
-    "posts": [
-      { "id": 1, "title": "Hello World", "author": "John Doe" },
-      { "id": 2, "title": "React is Awesome", "author": "Jane Doe" }
-    ]
+  "posts": [
+    {
+      "id": "1",
+      "title": "Hello World",
+      "author": "John Doe"
+    },
+    {
+      "id": "2",
+      "title": "React is Awesome",
+      "author": "Jane Doe"
+    }
+  ],
+  "products": [
+    {
+      "id": "2",
+      "name": "Business Laptop",
+      "price": 90000,
+      "company": "Acer"
+    },
+    {
+      "id": "3",
+      "name": "Gamming Laptop",
+      "price": 110000,
+      "company": "Acer"
+    },
+    {
+      "id": "5",
+      "name": "iPhone 16 pro MAX",
+      "price": 160000,
+      "company": "Apple"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "userid": "nandan",
+      "upass": "nandan@123 "
+    }
+  ]
 }
