@@ -1,7 +1,17 @@
+import { Button, Grid } from "@mui/material";
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const NavComp = () => {
+  const navigate = useNavigate();
+
+  const handleSingout = () => {
+    if (window.confirm("Are you sure to signout??")) {
+      sessionStorage.clear("user");
+      navigate("/");
+    }
+  };
+
   return (
     <div>
       <Link to="images" class="btn btn-primary">
@@ -19,6 +29,17 @@ const NavComp = () => {
       <Link to="crud" class="btn btn-primary">
         Crud
       </Link>{" "}
+      {/* <Link to="/login" class="btn btn-danger" style={{ textAlign: "right" }}>
+        Singout
+      </Link> */}
+      <Button
+        variant="contained"
+        color="error"
+        style={{ float: "right" }}
+        onClick={() => handleSingout()}
+      >
+        Sign Out
+      </Button>
     </div>
   );
 };

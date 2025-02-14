@@ -13,6 +13,8 @@ import Typography from "@mui/material/Typography";
 import { styled } from "@mui/material/styles";
 import ForgotPassword from "./ForgotPassword";
 import { GoogleIcon, FacebookIcon, SitemarkIcon } from "./CustomIcons";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const Card = styled(MuiCard)(({ theme }) => ({
   display: "flex",
@@ -39,6 +41,9 @@ export default function SignInCard() {
   const [passwordErrorMessage, setPasswordErrorMessage] = React.useState("");
   const [open, setOpen] = React.useState(false);
 
+  const [users, setUsers] = React.useState([]);
+  const nav = useNavigate();
+
   const handleClickOpen = () => {
     setOpen(true);
   };
@@ -47,16 +52,38 @@ export default function SignInCard() {
     setOpen(false);
   };
 
-  const handleSubmit = (event) => {
-    if (emailError || passwordError) {
-      event.preventDefault();
-      return;
-    }
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    // if (emailError || passwordError) {
+    //   event.preventDefault();
+    //   return;
+    // }
     const data = new FormData(event.currentTarget);
+    const email = data.get("email");
+    const password = data.get("password");
     console.log({
-      email: data.get("email"),
-      password: data.get("password"),
+      email: email,
+      password: password,
     });
+    try {
+      const res = await axios.get(`http://localhost:8888/users`);
+      const fetchedUsers = res.data;
+      setUsers(fetchedUsers);
+      console.log("users::", fetchedUsers);
+      const currentUser = fetchedUsers.filter(
+        (user) => user.upass === password && user.userid === email
+      );
+      console.log("currentUser::", currentUser);
+      if (currentUser.length > 0) {
+        window.alert("current user foudn");
+        sessionStorage.setItem("user", email);
+        nav("/maindashboard");
+      } else {
+        window.alert("Wrong credentials!!");
+      }
+    } catch (error) {
+      console.log("User fetch error::", error);
+    }
   };
 
   const validateInputs = () => {

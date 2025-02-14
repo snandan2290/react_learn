@@ -12,6 +12,9 @@ const ReactHookComp = () => {
             </Link>{" "}
             <Link to="effect" class="btn btn-primary">
               Effect
+            </Link>{" "}
+            <Link to="ref" class="btn btn-primary">
+              Ref
             </Link>
           </div>
           <div class="card-body border-primary">
