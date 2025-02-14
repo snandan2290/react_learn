@@ -14,6 +14,7 @@ import ProductEditComp from "../CRUD/ProductEditComp";
 import ProductAddComp from "../CRUD/ProductAddComp";
 import ProtectRouteComp from "./ProtectRouteComp";
 import UseRefHookComp from "../Hooks/UseRefHookComp";
+import UseContextComp from "../Hooks/UseContextComp";
 
 // Lazy loading componenets
 // const LoginComp = lazy(() => import("../layout/LoginComp"));
@@ -86,6 +87,10 @@ const router = createBrowserRouter([
           {
             path: "ref",
             element: <UseRefHookComp></UseRefHookComp>,
+          },
+          {
+            path: "context",
+            element: <UseContextComp></UseContextComp>,
           },
         ],
       },
