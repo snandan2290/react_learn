@@ -15,6 +15,9 @@ import ProductAddComp from "../CRUD/ProductAddComp";
 import ProtectRouteComp from "./ProtectRouteComp";
 import UseRefHookComp from "../Hooks/UseRefHookComp";
 import UseContextComp from "../Hooks/UseContextComp";
+import { DataListComp } from "../reduxdata/DataListComp";
+import { AddDataListComp } from "../reduxdata/AddDataListComp";
+import EditDataListComp from "../reduxdata/EditDataListComp";
 
 // Lazy loading componenets
 // const LoginComp = lazy(() => import("../layout/LoginComp"));
@@ -105,6 +108,19 @@ const router = createBrowserRouter([
       {
         path: "productEdit/:id",
         element: <ProductEditComp></ProductEditComp>,
+      },
+
+      {
+        path: "datalist",
+        element: <DataListComp></DataListComp>,
+      },
+      {
+        path: "adddatalist",
+        element: <AddDataListComp></AddDataListComp>,
+      },
+      {
+        path: "editdatalist/:id",
+        element: <EditDataListComp></EditDataListComp>,
       },
     ],
   },

@@ -29,6 +29,9 @@ const NavComp = () => {
       <Link to="crud" class="btn btn-primary">
         Crud
       </Link>{" "}
+      <Link to="datalist" class="btn btn-primary">
+        DataList
+      </Link>{" "}
       {/* <Link to="/login" class="btn btn-danger" style={{ textAlign: "right" }}>
         Singout
       </Link> */}

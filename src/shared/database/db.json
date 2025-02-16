@@ -1,99 +1,51 @@
 {
   "posts": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Hello World",
       "author": "John Doe"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "React is Awesome",
       "author": "Jane Doe"
     }
   ],
   "products": [
     {
-      "name": "iPhone 16 pro MAX3",
-      "price": 160000,
-      "company": "Apple",
-      "id": 5
+      "id": "12",
+      "name": "iPhone 14",
+      "price": "160000",
+      "company": "Apple "
     },
     {
-      "id": 1,
-      "name": "S23 ultra",
-      "company": "samsung",
-      "price": "640000"
+      "id": "a1ce",
+      "name": "dasdasdas",
+      "price": "dadasda",
+      "company": "sdasdasdasd"
     },
     {
-      "id": 2,
-      "name": "wadasd",
-      "company": "asdasd",
-      "price": "sadadas"
+      "id": "b20c",
+      "name": "keyboard",
+      "price": "3000",
+      "company": "logitech"
     },
     {
-      "id": 3,
-      "name": "asdasd",
-      "company": "asdasd",
-      "price": "asdadsa"
+      "id": "375a",
+      "name": "fsdfsdf",
+      "price": "sfsdfds",
+      "company": "fsdfsdfds"
     },
     {
-      "id": 4,
-      "name": "xzx",
-      "company": "xzX",
-      "price": "zZXzx"
-    },
-    {
-      "id": 7,
-      "name": "dasdas",
-      "company": "aasdsad",
-      "price": "asdasd"
-    },
-    {
-      "id": 8,
-      "name": "adasd",
-      "price": "aasdasdasd",
-      "company": "asdasdasd"
-    },
-    {
-      "id": 9,
-      "name": "dadasd",
-      "price": "adasdsad",
-      "company": "adasd"
-    },
-    {
-      "id": 10,
-      "name": "adsdasdasd",
-      "price": "asdasdasdasd",
-      "company": "asdadasdasdas"
-    },
-    {
-      "id": 11,
-      "name": "sdsadsadas",
-      "price": "sdasdasdas",
-      "company": "asdasdasdas"
-    },
-    {
-      "id": 12,
-      "name": "sdsadasdas",
-      "price": "dasdasdasd",
-      "company": "asdasdasdasd"
-    },
-    {
-      "id": 13,
-      "name": "iPhone 16 pro max",
-      "price": "Apple",
-      "company": "11300000"
-    },
-    {
-      "id": 14,
-      "name": "s22 ultra",
-      "price": "6770000",
-      "company": "Samsung"
+      "id": "91bd",
+      "name": "fsdfsdf",
+      "price": "sdfsdfsdf",
+      "company": "sdfsdfsdfdsf"
     }
   ],
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "userid": "nandan22@gmail.com",
       "upass": "nandan@123"
     }
